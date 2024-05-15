@@ -56,6 +56,7 @@ body {
     position: absolute;
     left: 130px; /*Largura do shoulder*/
     width: calc(100% - 130px); /*Espaço restante após o shoulder*/
+    overflow: hidden;
 }
 
 .card-row {
