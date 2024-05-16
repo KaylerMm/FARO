@@ -32,13 +32,24 @@ img {
   margin-bottom: 2rem;
 }
 
+body {
+  /* background: linear-gradient(to top right, #ffffff, #bec3fc);
+  height: 100vh; */
+  position: relative;
+  padding-top: 5rem;
+}
+
 #shoulder {
   background-color: #643f92;
+  width: 100%;
   color: #ffffff;
-  padding: 20px;
+  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
+  position: fixed;
+  top: 0;
+  z-index: 999;
 }
 #menu {
   display: none;
@@ -48,6 +59,7 @@ img {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   font-size: 1.87rem;
+  margin-bottom: 1rem;
 }
 
 /* slider */
@@ -129,7 +141,7 @@ img {
 }
 
 .perguntas dl {
-  padding: 1.25rem;
+  padding: 0.5rem;
 }
 
 .perguntas dl:nth-child(even) {
@@ -148,18 +160,17 @@ img {
 }
 
 @media (min-width: 900px) {
+  body {
+    padding-top: 1rem;
+  }
   #farum {
-    margin-top: 2rem;
+    margin-top: 0rem;
   }
   #menu {
     display: inline-block;
   }
   #menu img {
     width: 2rem;
-  }
-  .first-container {
-    display: grid;
-    grid-template-columns: 0.1fr 1fr;
   }
 
   .btn-mobile {
@@ -179,6 +190,7 @@ img {
     flex-direction: column;
     justify-content: flex-start;
     margin-bottom: 0;
+    width: initial;
   }
 
   #menu ul {
@@ -203,6 +215,12 @@ img {
     text-decoration: none;
   }
 
+  .main-container {
+    padding-left: 5rem;
+    margin: 0 auto;
+    max-width: 1300px;
+  }
+
   /* slider */
   .farum-slider {
     margin-inline: 10rem;
@@ -211,8 +229,8 @@ img {
   /* farum */
   .perguntas {
     margin-inline: 10rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
   }
 
   .perguntas h2 {
